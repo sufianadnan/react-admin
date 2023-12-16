@@ -15,3 +15,15 @@ import {
 } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
+
+const Calendar = () => {
+	const theme = useTheme();
+	const colors = tokens(theme.palette.mode);
+	const [currentEvents, setCurrentEvents] = useState([]);
+	const handleDateClick = (selected) => {
+		const title = prompt("Please enter a new title for your event");
+		const calendarApi = selected.view.calendar;
+	};
+};
+
+export default Calendar;
